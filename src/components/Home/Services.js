@@ -26,7 +26,7 @@ const ServicesContainer = styled.div`
   padding: 10px 0px;
 `;
 
-const ServicesParagraph = styled.p`
+const ServicesParagraph = styled.h1`
   font-size: 50px;
   font-weight: 800;
   opacity: 0.2;
@@ -75,7 +75,7 @@ const Services = () => {
   return (
     <ServicesContainer>
       <ServicesParagraph>Services</ServicesParagraph>
-      <p>We also a wide range of servcies</p>
+      <h4>We also a wide range of servcies</h4>
       <div >
         <ServiceGrid>
           <EachService>

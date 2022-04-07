@@ -16,7 +16,7 @@ const ViewMore = styled.button`
   cursor: pointer;
 `;
 
-const GalleryParagraph = styled.p`
+const GalleryParagraph = styled.h1`
   font-size: 50px;
   font-weight: 800;
   opacity: 0.2;

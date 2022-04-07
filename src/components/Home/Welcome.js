@@ -7,12 +7,12 @@ const WelcomeContainer = styled.div`
   background-color:#adc906 ;
 `;
 
-const Wilkommen = styled.p`
+const Wilkommen = styled.h1`
   font-size: 50px;
   font-weight: 800;
   opacity: 0.2;
 `;
-const Schon = styled.p`
+const Schon = styled.h4`
 color: white;
 text-transform: capitalize;
 font-weight: 600;
