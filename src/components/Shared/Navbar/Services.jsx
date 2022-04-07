@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 library.add(fab, faAngleDown, faAngleUp);
 
@@ -35,13 +36,14 @@ const ServicesOffered = styled.ul`
   flex-direction: column;
 `;
 
-const Offered = styled.li`
+const Offered = styled(Link)`
   list-style: none;
   margin-bottom: 10px;
   margin-left: 20px;
   border-bottom: 1px solid #7b8158;
   padding-bottom: 10px;
   cursor: pointer;
+  text-decoration: none;
 `;
 
 const NavLink = styled.li`
@@ -107,14 +109,15 @@ const Services = () => {
         />
       </Servicess>
       <ServicesOffered style={slideMenu()}>
-        <Offered>Bindings</Offered>
-        <Offered>CAD & Reprography</Offered>
-        <Offered>Designs</Offered>
-        <Offered>Scanning</Offered>
-        <Offered>Laminating</Offered>
-        <Offered>Posters</Offered>
-        <Offered>Photocopy</Offered>
-        <Offered>Textiles</Offered>
+        <Offered to="/printing">Printing</Offered>
+        <Offered to="/binding">Bindings</Offered>
+        <Offered to="/cad-reprography">CAD & Reprography</Offered>
+        <Offered to="/designs">Designs</Offered>
+        <Offered to="/scanning">Scanning</Offered>
+        <Offered to="/laminating">Laminating</Offered>
+        <Offered to="/posters">Posters</Offered>
+        <Offered to="/photocopy">Photocopy</Offered>
+        <Offered to="/textiles">Textiles</Offered>
       </ServicesOffered>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 
@@ -7,29 +7,33 @@ const Laminate = () => {
     <div>
       <Navbar />
       <div>
-        <h1>Individual Design</h1>
+        <h1>laminating and lining</h1>
         <div>
           <p>
-            Are you planning an event and want to hit the mark with the
-            invitation? Or are you looking for individual menu cards for your
-            restaurant or even seasonal cards, such as B. for the Easter and
-            Christmas period? Then you've come to the right place - because we
-            design according to your wishes.
+            You only know “laminate” from laying floors? Then watch out: In
+            order to make menus, posters and notices more robust against
+            sunlight and dirt, you can cover them with a thin layer, the
+            so-called laminate.
+          </p>
+          <p>A distinction is made between 2 variants:</p>
+          <p>
+            Hot laminate: the print is provided with a protective layer on both
+            sides, so it can also be used outdoors. Despite its stability, it
+            remains flexible in shape and you can easily transport it.
           </p>
           <p>
-            We have also made provisions for corporate customers: we design all
-            of your business stationery, from letterhead, company folders and
-            company stamps to lanyards, writing pads, calendars and much more.
+            Laminating: this is a one-sided sealing of the surface and should
+            therefore only be used indoors
           </p>
           <p>
-            Tip: Simply make an appointment for a non-binding consultation by
-            telephone on 0340 - 240 43 331 or simply drop by us.
+            Other examples of use: parking permits, school and student ID cards,
+            business cards, pocket calendars, bookmarks and much more.
           </p>
         </div>
       </div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Laminate
+export default Laminate;

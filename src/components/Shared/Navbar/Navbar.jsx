@@ -12,6 +12,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import Services from "./Services";
+import { Link } from "react-router-dom";
 
 library.add(fab, faBars, faXmark, faPhone, faAngleDown, faAngleUp);
 
@@ -27,8 +28,9 @@ const NavWrapper = styled.nav`
 
 //Logo
 
-const LogoWrapper = styled.div`
+const LogoWrapper = styled(Link)`
   width: 170px;
+  cursor: pointer;
 `;
 const Logo = styled.img`
   width: 100%;
@@ -89,6 +91,7 @@ const NavLink = styled.li`
   transition: all 0.375s ease-in;
   animation-name: Nav;
   animation-duration: 900ms;
+  text-decoration: none;
 
   @keyframes Nav {
     from {
@@ -159,7 +162,7 @@ const Navbar = () => {
 
   return (
     <NavWrapper>
-      <LogoWrapper>
+      <LogoWrapper to='/'> 
         <Logo src={logo} />
       </LogoWrapper>
 
