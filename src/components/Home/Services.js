@@ -6,7 +6,7 @@ import { fab, faFigma } from "@fortawesome/free-brands-svg-icons";
 import {
   faAngleDown,
   faAngleUp,
-  faBarcode,
+
   faBars,
   faBook,
   faFolder,

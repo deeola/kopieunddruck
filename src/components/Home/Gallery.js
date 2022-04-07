@@ -24,15 +24,22 @@ const GalleryParagraph = styled.p`
   margin: auto;
 `;
 
+const ImageContainer = styled.div`
+
+width: 96%;
+margin: auto;
+
+`
+
 const Gallery = () => {
   return (
     <div>
       <GalleryParagraph>GALLERY</GalleryParagraph>
-      <div>
+      <ImageContainer>
         <HeroImage src={HeroTwo} alt="heroTwo" />
         <HeroImage src={HeroOne} alt="heroOne" />
         <HeroImage src={HeroTwo} alt="heroTwo" />
-      </div>
+      </ImageContainer>
 
       <ViewMore>View More</ViewMore>
     </div>
