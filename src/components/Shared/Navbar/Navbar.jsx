@@ -162,7 +162,7 @@ const Navbar = () => {
 
   return (
     <NavWrapper>
-      <LogoWrapper to='/'> 
+      <LogoWrapper to="/">
         <Logo src={logo} />
       </LogoWrapper>
 
