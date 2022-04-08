@@ -18,7 +18,8 @@ const UnorderedList = styled.ul`
   }
 `;
 
-const BodyContainer = styled.div``;
+const BodyContainer = styled.div`
+`;
 
 const Header = styled.h1`
   margin: 10px auto 20px 0px;
