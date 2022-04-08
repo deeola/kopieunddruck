@@ -7,12 +7,13 @@ import design from "../../assest/design.jpg";
 const BodyContainer = styled.div``;
 
 const Header = styled.h1`
-  margin: 0pxx auto 20px 0px;
+  margin: 0px auto 20px 0px;
 
-  width: 50%;
+  width: 90%;
   background-color: #adc906;
   color: #eaeef1;
-  padding-left: 30px;
+padding: 10px 10px 10px 20px;
+
 `;
 
 const ImageContainer = styled.img`
@@ -49,7 +50,7 @@ const BindungText = styled.p`
 
   span {
     color: #adc906;
-  }
+ }
 `;
 
 const Designs = () => {
