@@ -82,7 +82,7 @@ const NavList = styled.ul`
   }
 `;
 
-const NavLink = styled.li`
+const NavLink = styled(Link)`
   list-style: none;
   color: #eaeef1;
   font-size: 20px;
@@ -168,9 +168,9 @@ const Navbar = () => {
 
       <NavList style={slideMenu()}>
         <Services />
-        <NavLink>Work Samples</NavLink>
-        <NavLink>About Us</NavLink>
-        <NavLink>Contact Us</NavLink>
+        <NavLink to='/'>Work Samples</NavLink>
+        <NavLink to='/about-us'>About Us</NavLink>
+        <NavLink to='/'>Contact Us</NavLink>
       </NavList>
       <CallIcon icon={faPhone} />
 

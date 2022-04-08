@@ -10,6 +10,7 @@ import Scan from "./components/Services/Scan";
 import Textiles from "./components/Services/Textiles";
 import Laminate from "./components/Services/Laminate";
 import Photocopy from "./components/Services/Photocopy";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -27,10 +28,13 @@ function App() {
           <Route exact path="/photocopy" element={<Photocopy />} />
           <Route exact path="/designs" element={<Designs />} />
           <Route exact path="/textiles" element={<Textiles />} />
+          <Route exact path="/about-us" element={<About />} />
+          
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;
