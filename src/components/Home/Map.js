@@ -18,8 +18,8 @@ function MyMap() {
   const BerlinDessau = [
     
     {
-      lat: 51.8364815,
-      lng: 12.2441451,
+      lat:51.83688,
+      lng: 12.24612,
       parkId: 2,
       name: "dessau",
     },
@@ -28,7 +28,7 @@ function MyMap() {
   return (
     <GoogleMap
       defaultZoom={16}
-      defaultCenter={{ lat: 51.8364815, lng: 12.2441451 }}
+      defaultCenter={{ lat: 51.83688, lng: 12.24612 }}
     >
       {BerlinDessau.map((city) => (
         <Marker key={city.parkId} position={{ lat: city.lat, lng: city.lng }} />
