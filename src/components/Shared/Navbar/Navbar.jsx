@@ -135,6 +135,7 @@ const Navbar = () => {
   //change NavIcon on click
 
   const [menuOpened, setMenuOpend] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [menuClosed, setMenuClosed] = useState(false);
 
   const slideMenu = () => {
@@ -170,7 +171,7 @@ const Navbar = () => {
         <Services />
         <NavLink to='/'>Work Samples</NavLink>
         <NavLink to='/about-us'>About Us</NavLink>
-        <NavLink to='/'>Contact Us</NavLink>
+        <NavLink to='/kontact'>Contact Us</NavLink>
       </NavList>
       <CallIcon icon={faPhone} />
 
