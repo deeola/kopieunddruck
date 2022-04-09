@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
-import HeroOne from "../../assest/printer1.jpg";
-import HeroTwo from "../../assest/printer2.jpg";
 
-const HeroContainer = styled.div`
+import cad from '../../assest/cad.jpg'
+import poster from '../../assest/poster.jpg'
+import druck from '../../assest/druck.jpg'
+import photocopy from '../../assest/photocopy.jpg'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, EffectFade, Pagination, Autoplay} from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+
+const HeroContainer = styled(Swiper)`
   width: 95%;
   height: 300px;
   background-color: aliceblue;
@@ -15,11 +26,36 @@ const HeroImage = styled.img`
   height: 100%;
 `;
 
+const SwiperStyle = styled(SwiperSlide)`
+
+
+`
+
 const Hero = () => {
   return (
-    <HeroContainer>
-      <HeroImage src={HeroTwo} alt="heroTwo" />
-      <HeroImage style={{ display: "none" }} src={HeroOne} alt="heroOne" />
+    <HeroContainer
+      modules={[Navigation, EffectFade, Pagination, Autoplay]}
+      // navigation
+      effect={'fade'}
+      speed={800}
+      slidesPerView={1}
+      loop
+      autoplay={{ delay: 2000 }}
+      // autoplay
+      pagination={{'clickable': true}}
+    >
+      <SwiperSlide>
+        <HeroImage src={cad} alt="heroTwo" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <HeroImage src={poster} alt="heroTwo" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <HeroImage src={druck} alt="heroTwo" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <HeroImage src={photocopy} alt="heroTwo" />
+      </SwiperSlide>
     </HeroContainer>
   );
 };
