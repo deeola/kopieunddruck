@@ -12,6 +12,7 @@ import Laminate from "./components/Services/Laminate";
 import Photocopy from "./components/Services/Photocopy";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import WorkSamples from "./components/Work/WorkSamples";
 
 function App() {
   return (
@@ -31,12 +32,14 @@ function App() {
           <Route exact path="/textiles" element={<Textiles />} />
           <Route exact path="/about-us" element={<About />} />
           <Route exact path="/kontact" element={<Contact />} />
+          <Route exact path="/worksamples" element={<WorkSamples />} />
           
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 
 

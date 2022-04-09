@@ -169,7 +169,7 @@ const Navbar = () => {
 
       <NavList style={slideMenu()}>
         <Services />
-        <NavLink to='/'>Work Samples</NavLink>
+        <NavLink to='/worksamples'>Work Samples</NavLink>
         <NavLink to='/about-us'>About Us</NavLink>
         <NavLink to='/kontact'>Contact Us</NavLink>
       </NavList>
