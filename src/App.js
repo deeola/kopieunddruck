@@ -16,11 +16,11 @@ import WorkSamples from "./components/Work/WorkSamples";
 
 function App() {
   return (
-    <Router basename={window.location.pathname || ''}>
+    <Router basename={window.location.pathname || ""}>
       <div className="App">
         <GlobalStyle />
         <Routes>
-          <Route exact path="/kopieunddruck" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/binding" element={<Binding />} />
           <Route exact path="/printing" element={<Printing />} />
           <Route exact path="/cad-reprography" element={<Cad />} />
@@ -33,14 +33,10 @@ function App() {
           <Route exact path="/about-us" element={<About />} />
           <Route exact path="/kontact" element={<Contact />} />
           <Route exact path="/worksamples" element={<WorkSamples />} />
-          
         </Routes>
       </div>
     </Router>
   );
 }
-
-
-
 
 export default App;
