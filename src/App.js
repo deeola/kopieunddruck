@@ -20,7 +20,7 @@ function App() {
       <div className="App">
         <GlobalStyle />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/kopieunddruck" element={<Home />} />
           <Route exact path="/binding" element={<Binding />} />
           <Route exact path="/printing" element={<Printing />} />
           <Route exact path="/cad-reprography" element={<Cad />} />
