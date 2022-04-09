@@ -163,7 +163,7 @@ const Navbar = () => {
 
   return (
     <NavWrapper>
-      <LogoWrapper to="/">
+      <LogoWrapper to="/kopieunddruck">
         <Logo src={logo} />
       </LogoWrapper>
 
