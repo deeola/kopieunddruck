@@ -1,31 +1,36 @@
 {
   "files": {
     "main.css": "/kopieunddruck/static/css/main.e6c13ad2.css",
-    "main.js": "/kopieunddruck/static/js/main.0d61d892.js",
+    "main.js": "/kopieunddruck/static/js/main.2799d655.js",
     "static/js/787.c4e7f8f9.chunk.js": "/kopieunddruck/static/js/787.c4e7f8f9.chunk.js",
     "static/media/druck.jpg": "/kopieunddruck/static/media/druck.2d5755ebc7854f857555.jpg",
+    "static/media/students.jpg": "/kopieunddruck/static/media/students.d9c47e5777d64c910380.jpg",
     "static/media/binding.jpg": "/kopieunddruck/static/media/binding.911e6ba180f93ba5a794.jpg",
+    "static/media/web_broschur.pdf": "/kopieunddruck/static/media/web_broschur.9c4d37e5087e68a33f48.pdf",
     "static/media/member1.jpg": "/kopieunddruck/static/media/member1.6b73fd246a999fb8e32e.jpg",
+    "static/media/delivery.jpg": "/kopieunddruck/static/media/delivery.f9a817a825c7417fa10c.jpg",
     "static/media/poster.jpg": "/kopieunddruck/static/media/poster.2e79ca97af52627e61b2.jpg",
     "static/media/scan.jpg": "/kopieunddruck/static/media/scan.2789500b1c54bde4c40b.jpg",
     "static/media/cad.jpg": "/kopieunddruck/static/media/cad.0446167ef0705c781239.jpg",
     "static/media/textile.jpg": "/kopieunddruck/static/media/textile.f9b6328d8928e7cae97b.jpg",
     "static/media/design.jpg": "/kopieunddruck/static/media/design.73e228406e8c02d5a522.jpg",
     "static/media/photocopy.jpg": "/kopieunddruck/static/media/photocopy.17679749a7a8f959154a.jpg",
+    "static/media/iso_coated_v2_300_eci.icc": "/kopieunddruck/static/media/iso_coated_v2_300_eci.bc2d8430bafe64443e1e.icc",
     "static/media/member2.jpg": "/kopieunddruck/static/media/member2.1f3e2a391e8eb0ab30f9.jpg",
     "static/media/laminate.jpg": "/kopieunddruck/static/media/laminate.1bbab4f63e404e9fd813.jpg",
     "static/media/contact.jpg": "/kopieunddruck/static/media/contact.634b09ab778c370be2b5.jpg",
     "static/media/printer2.jpg": "/kopieunddruck/static/media/printer2.ea179566a195bb44ee2b.jpg",
+    "static/media/coated.pdf": "/kopieunddruck/static/media/coated.45ef20ecaa165a36a3fb.pdf",
     "static/media/map.png": "/kopieunddruck/static/media/map.6e672ac746323558da9e.png",
     "static/media/printer1.jpg": "/kopieunddruck/static/media/printer1.f2bcdff2b636844ed4b0.jpg",
     "static/media/logo.png": "/kopieunddruck/static/media/logo.cde4d5af8da199c05bf9.png",
     "index.html": "/kopieunddruck/index.html",
     "main.e6c13ad2.css.map": "/kopieunddruck/static/css/main.e6c13ad2.css.map",
-    "main.0d61d892.js.map": "/kopieunddruck/static/js/main.0d61d892.js.map",
+    "main.2799d655.js.map": "/kopieunddruck/static/js/main.2799d655.js.map",
     "787.c4e7f8f9.chunk.js.map": "/kopieunddruck/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0d61d892.js"
+    "static/js/main.2799d655.js"
   ]
 }
