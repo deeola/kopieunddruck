@@ -18,6 +18,7 @@ import DataProtect from "./components/Shared/Footer/DataProtect";
 import Disclaimer from "./components/Shared/Footer/Disclaimer";
 import Impressum from "./components/Shared/Footer/Impressum";
 import Datanau from "./components/Datanauf/Datanau";
+import Students from "./components/Services/Students";
 
 function App() {
   return (
@@ -43,12 +44,12 @@ function App() {
           <Route exact path="/impressum" element={<Impressum />} />
           <Route exact path="/datenaufbereitung" element={<Datanau />} />
           <Route exact path="/delivery" element={<Delivery />} />
+          <Route exact path="/students" element={<Students />} />
         </Routes>
       </div>
     </Router>
   );
 }
-
 
 
 
