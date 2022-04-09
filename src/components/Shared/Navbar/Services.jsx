@@ -118,6 +118,7 @@ const Services = () => {
         <Offered to="/posters">Posters</Offered>
         <Offered to="/photocopy">Photocopy</Offered>
         <Offered to="/textiles">Textiles</Offered>
+        <Offered to="/delivery">Delivery</Offered>
       </ServicesOffered>
     </div>
   );

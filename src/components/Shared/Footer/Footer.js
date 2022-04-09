@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import brochure from '../../../assest/web_broschur.pdf'
 
 library.add(fab);
 
@@ -26,7 +28,7 @@ const FooterNav = styled.ul`
   flex-direction: column;
 `;
 
-const FooterLink = styled.li`
+const FooterLink = styled(Link)`
   list-style: none;
   margin-bottom: 8px;
 `;
@@ -68,11 +70,11 @@ const Footer = () => {
     <FooterContainer>
       <FooterUpper>
         <FooterNav>
-          <FooterLink >Contact</FooterLink>
-          <FooterLink>Address</FooterLink>
-          <FooterLink>Disclaimer</FooterLink>
-          <FooterLink>Data Protection</FooterLink>
-          <FooterLink>Imprint</FooterLink>
+          <FooterLink to='/kontact' >Contact</FooterLink>
+          {/* <FooterLink to='/address'>Address</FooterLink> */}
+          <FooterLink to='/disclaimer'>Disclaimer</FooterLink>
+          <FooterLink to='/dataprotection'>Data Protection</FooterLink>
+          <FooterLink to='/impressum'>Imprint</FooterLink>
         </FooterNav>
         <Logo>
           <FacebookLink
@@ -89,6 +91,10 @@ const Footer = () => {
           </Address>
         </Logo>
       </FooterUpper>
+      <div>
+        <p>Für Sie zum downloaden unsere Info-Broschüre, in der Sie alles über unser Leistungsangebot nachlesen können.</p>
+        <a href={brochure}>Info-Broschüre, deutsch (*.pdf, 4.2MB).</a>
+      </div>
 
       {/* <div>
           facebook Logo

@@ -10,9 +10,14 @@ import Scan from "./components/Services/Scan";
 import Textiles from "./components/Services/Textiles";
 import Laminate from "./components/Services/Laminate";
 import Photocopy from "./components/Services/Photocopy";
+import Delivery from "./components/Services/Delivery";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import WorkSamples from "./components/Work/WorkSamples";
+import DataProtect from "./components/Shared/Footer/DataProtect";
+import Disclaimer from "./components/Shared/Footer/Disclaimer";
+import Impressum from "./components/Shared/Footer/Impressum";
+import Datanau from "./components/Datanauf/Datanau";
 
 function App() {
   return (
@@ -33,10 +38,18 @@ function App() {
           <Route exact path="/about-us" element={<About />} />
           <Route exact path="/kontact" element={<Contact />} />
           <Route exact path="/worksamples" element={<WorkSamples />} />
+          <Route exact path="/dataprotection" element={<DataProtect />} />
+          <Route exact path="/disclaimer" element={<Disclaimer />} />
+          <Route exact path="/impressum" element={<Impressum />} />
+          <Route exact path="/datenaufbereitung" element={<Datanau />} />
+          <Route exact path="/delivery" element={<Delivery />} />
         </Routes>
       </div>
     </Router>
   );
 }
+
+
+
 
 export default App;

@@ -172,6 +172,7 @@ const Navbar = () => {
         <NavLink to="/worksamples">Work Samples</NavLink>
         <NavLink to="/about-us">About Us</NavLink>
         <NavLink to="/kontact">Contact Us</NavLink>
+        <NavLink to="/datenaufbereitung">Datenaufbereitung</NavLink>
       </NavList>
       <CallIcon icon={faPhone} />
 
