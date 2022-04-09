@@ -163,15 +163,15 @@ const Navbar = () => {
 
   return (
     <NavWrapper>
-      <LogoWrapper to="/kopieunddruck">
+      <LogoWrapper to="/">
         <Logo src={logo} />
       </LogoWrapper>
 
       <NavList style={slideMenu()}>
         <Services />
-        <NavLink to='/worksamples'>Work Samples</NavLink>
-        <NavLink to='/about-us'>About Us</NavLink>
-        <NavLink to='/kontact'>Contact Us</NavLink>
+        <NavLink to="/worksamples">Work Samples</NavLink>
+        <NavLink to="/about-us">About Us</NavLink>
+        <NavLink to="/kontact">Contact Us</NavLink>
       </NavList>
       <CallIcon icon={faPhone} />
 

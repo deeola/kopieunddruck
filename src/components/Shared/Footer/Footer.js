@@ -68,7 +68,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterUpper>
         <FooterNav>
-          <FooterLink>Contact</FooterLink>
+          <FooterLink >Contact</FooterLink>
           <FooterLink>Address</FooterLink>
           <FooterLink>Disclaimer</FooterLink>
           <FooterLink>Data Protection</FooterLink>
