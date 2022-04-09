@@ -44,6 +44,7 @@ const Offered = styled(Link)`
   padding-bottom: 10px;
   cursor: pointer;
   text-decoration: none;
+  color:  aliceblue;
 `;
 
 const NavLink = styled.li`
