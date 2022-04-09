@@ -6,7 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import brochure from '../../../assest/web_broschur.pdf'
+import brochure from "../../../assest/web_broschur.pdf";
 
 library.add(fab);
 
@@ -31,6 +31,9 @@ const FooterNav = styled.ul`
 const FooterLink = styled(Link)`
   list-style: none;
   margin-bottom: 8px;
+  color: aliceblue ;
+  text-decoration: none;
+  color: black;
 `;
 
 const CopyRight = styled.p`
@@ -63,6 +66,30 @@ const Address = styled.div`
   }
 `;
 
+
+const Download = styled.div`
+
+width: 80%;
+margin: auto;
+
+
+p{
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+a{
+  margin: 10px 0px; 
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+`
+
 const Footer = () => {
   const getYear = new Date().getFullYear();
 
@@ -70,11 +97,11 @@ const Footer = () => {
     <FooterContainer>
       <FooterUpper>
         <FooterNav>
-          <FooterLink to='/kontact' >Contact</FooterLink>
+          <FooterLink to="/kontact">Contact</FooterLink>
           {/* <FooterLink to='/address'>Address</FooterLink> */}
-          <FooterLink to='/disclaimer'>Disclaimer</FooterLink>
-          <FooterLink to='/dataprotection'>Data Protection</FooterLink>
-          <FooterLink to='/impressum'>Imprint</FooterLink>
+          <FooterLink to="/disclaimer">Disclaimer</FooterLink>
+          <FooterLink to="/dataprotection">Data Protection</FooterLink>
+          <FooterLink to="/impressum">Imprint</FooterLink>
         </FooterNav>
         <Logo>
           <FacebookLink
@@ -91,10 +118,13 @@ const Footer = () => {
           </Address>
         </Logo>
       </FooterUpper>
-      <div>
-        <p>Für Sie zum downloaden unsere Info-Broschüre, in der Sie alles über unser Leistungsangebot nachlesen können.</p>
+      <Download>
+        <p>
+          Für Sie zum downloaden unsere Info-Broschüre, in der Sie alles über
+          unser Leistungsangebot nachlesen können.
+        </p>
         <a href={brochure}>Info-Broschüre, deutsch (*.pdf, 4.2MB).</a>
-      </div>
+      </Download>
 
       {/* <div>
           facebook Logo
