@@ -16,7 +16,7 @@ import WorkSamples from "./components/Work/WorkSamples";
 
 function App() {
   return (
-    <Router>
+    <Router basename={window.location.pathname || ''}>
       <div className="App">
         <GlobalStyle />
         <Routes>
