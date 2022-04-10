@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
   background-color: wheat;
 }
 
+img{
+  display: block;
+}
+
 `;
 
 export default GlobalStyle;
