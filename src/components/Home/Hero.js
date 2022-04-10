@@ -41,16 +41,16 @@ const Hero = () => {
       pagination={{'clickable': true}}
     >
       <SwiperSlide>
-        <HeroImage src={cad} alt="heroTwo" />
+        <HeroImage src={cad} alt="heroTwo" loading="lazy" />
       </SwiperSlide>
       <SwiperSlide>
-        <HeroImage src={poster} alt="heroTwo" />
+        <HeroImage src={poster} alt="heroTwo" loading="lazy"  />
       </SwiperSlide>
       <SwiperSlide>
-        <HeroImage src={druck} alt="heroTwo" />
+        <HeroImage src={druck} alt="heroTwo" loading="lazy"  />
       </SwiperSlide>
       <SwiperSlide>
-        <HeroImage src={photocopy} alt="heroTwo" />
+        <HeroImage src={photocopy} alt="heroTwo" loading="lazy"  />
       </SwiperSlide>
     </HeroContainer>
   );
