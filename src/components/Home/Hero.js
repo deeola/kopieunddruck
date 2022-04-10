@@ -26,10 +26,6 @@ const HeroImage = styled.img`
   height: 100%;
 `;
 
-const SwiperStyle = styled(SwiperSlide)`
-
-
-`
 
 const Hero = () => {
   return (

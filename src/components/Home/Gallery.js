@@ -2,14 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import HeroOne from "../../assest/printer1.jpg";
 import HeroTwo from "../../assest/printer2.jpg";
+import { Link } from "react-router-dom";
 
 const HeroImage = styled.img`
   width: 100%;
   height: 100%;
 `;
 
-const ViewMore = styled.button`
-  padding: 15px 30px;
+const ViewMore = styled(Link)`
+margin: 5px 0px;
+padding: 10px;
+display: block;
+width: 30%;
+text-decoration: none;
+font-weight: 700;
   background-color: #adc906;
   border: none;
   color: white;
@@ -41,7 +47,7 @@ const Gallery = () => {
         <HeroImage src={HeroTwo} alt="heroTwo" />
       </ImageContainer>
 
-      <ViewMore>View More</ViewMore>
+      <ViewMore to='/worksamples'>View More</ViewMore>
     </div>
   );
 };

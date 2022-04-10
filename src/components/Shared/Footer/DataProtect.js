@@ -10,12 +10,7 @@ const Header = styled.h1`
   padding: 10px 10px 10px 20px;
 `;
 
-const Subheading = styled.h4`
-  color: #adc906;
-  margin: 15px 0px;
-  font-weight: 800;
-  font-size: 19px;
-`;
+
 
 const Container = styled.div`
   width: 85%;

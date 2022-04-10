@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import logo from "../../../assest/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Services from "./Services";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
 
 library.add(fab, faBars, faXmark, faPhone, faAngleDown, faAngleUp);
 
@@ -88,19 +89,9 @@ const NavLink = styled(Link)`
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
-  transition: all 0.375s ease-in;
-  animation-name: Nav;
-  animation-duration: 900ms;
   text-decoration: none;
 
-  @keyframes Nav {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+
 `;
 
 const CallIcon = styled(FontAwesomeIcon)`
@@ -154,12 +145,68 @@ const Navbar = () => {
 
   const menuIconClicked = () => {
     setMenuOpend(!menuOpened);
+    animateNavbar()
     return menuClosed ? {} : { display: "block" };
   };
 
   const closeIconClicked = () => {
     setMenuOpend(false);
   };
+
+
+  // Animation
+
+  const ServicesText = useRef(null);
+  const WorkText = useRef(null);
+  const AboutText = useRef(null);
+  const ContactText = useRef();
+  const DataText = useRef(null);
+
+  const animateNavbar =() => {
+    gsap.from(ServicesText.current, {
+      x: 40,
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 0.2,
+      yoyo: true,
+      opacity: 0,
+    });
+
+    gsap.from(WorkText.current, {
+      y: 40,
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 0.4,
+      yoyo: true,
+      opacity: 0,
+    });
+    gsap.from(AboutText.current, {
+      y: 40,
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 0.6,
+      yoyo: true,
+      opacity: 0,
+    });
+    gsap.from(ContactText.current, {
+      y: 40,
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 0.8,
+      yoyo: true,
+      opacity: 0,
+    });
+    gsap.from(DataText.current, {
+      y: 40,
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 1,
+      yoyo: true,
+      opacity: 0,
+    });
+  }
+
+
 
   return (
     <NavWrapper>
@@ -168,11 +215,11 @@ const Navbar = () => {
       </LogoWrapper>
 
       <NavList style={slideMenu()}>
-        <Services />
-        <NavLink to="/worksamples">Work Samples</NavLink>
-        <NavLink to="/about-us">About Us</NavLink>
-        <NavLink to="/kontact">Contact Us</NavLink>
-        <NavLink to="/datenaufbereitung">Datenaufbereitung</NavLink>
+        <Services ref={ServicesText} />
+        <NavLink ref={WorkText} to="/worksamples">Work Samples</NavLink>
+        <NavLink ref={AboutText} to="/about-us">About Us</NavLink>
+        <NavLink ref={ContactText} to="/kontact">Contact Us</NavLink>
+        <NavLink ref={DataText} to="/datenaufbereitung">Datenaufbereitung</NavLink>
       </NavList>
       <CallIcon icon={faPhone} />
 

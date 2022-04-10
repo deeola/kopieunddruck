@@ -6,7 +6,6 @@ import { fab, faFigma } from "@fortawesome/free-brands-svg-icons";
 import {
   faAngleDown,
   faAngleUp,
-
   faBars,
   faBook,
   faFolder,
@@ -40,43 +39,45 @@ const EachService = styled.div`
   background-color: #adc906;
   margin-bottom: 10px;
   align-items: center;
-  border-radius: 15px 50px;
+  border-radius: 15px 30px;
   padding: 10px 0px;
+  
   cursor: pointer;
 
-  p{
-    color: black;
+  p {
+    color: #eaeef1;
     font-weight: 500;
     font-size: 20px;
-
   }
-
 `;
 
 const ServiceGrid = styled.div`
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 20px;
-margin-top: 20px;
-width: 95%;
-margin: 20px auto;
-
-
-`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+  width: 95%;
+  margin: 20px auto;
+`;
 
 const IconService = styled(FontAwesomeIcon)`
-color: white;
-font-size: 50px;
-padding: 20px 0px;
-
-`
+  color: white;
+  font-size: 40px;
+  padding: 20px 0px;
+  color: #eaeef1;
+`;
+const SubHeading = styled.h4`
+  width: 93%;
+  margin: auto;
+  color: #adc906;
+`;
 
 const Services = () => {
   return (
     <ServicesContainer>
       <ServicesParagraph>Services</ServicesParagraph>
-      <h4>We also a wide range of servcies</h4>
-      <div >
+      <SubHeading>We also a wide range of servcies</SubHeading>
+      <div>
         <ServiceGrid>
           <EachService>
             <IconService icon={faPaste} />
@@ -91,15 +92,15 @@ const Services = () => {
             <p> Design</p>
           </EachService>
           <EachService>
-            <IconService  icon={faBook} />
+            <IconService icon={faBook} />
             <p> Binding</p>
           </EachService>
           <EachService>
-            <IconService  icon={faShirt} />
+            <IconService icon={faShirt} />
             <p> Textile</p>
           </EachService>
           <EachService>
-            <IconService  icon={faFolder} />
+            <IconService icon={faFolder} />
             <p>Scanning</p>
           </EachService>
         </ServiceGrid>
