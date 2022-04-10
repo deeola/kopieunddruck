@@ -6,6 +6,27 @@ const WelcomeContainer = styled.div`
   width: 96%;
   margin: auto;
   background-color: #adc906;
+
+  //Bigger tablet
+  @media (min-width: 768px) {
+    /* CSS */
+    position: relative;
+    height: 300px;
+    background-color: unset;
+    margin: 20px;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const Wilkommen = styled.h1`
@@ -13,6 +34,30 @@ const Wilkommen = styled.h1`
   font-weight: 800;
   opacity: 0.2;
   padding: 0px 10px;
+  //Bigger tablet
+  @media (min-width: 768px) {
+    /* CSS */
+
+    /* position: absolute; */
+    /* transform: rotate(-90deg); */
+    /* transform-origin: 0 0; */
+
+    font-size: 82px;
+    color: #adc906;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) {
+    /* CSS */
+    font-size: 120px;
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 const Schon = styled.h4`
   color: white;
@@ -20,6 +65,35 @@ const Schon = styled.h4`
   font-weight: 600;
 
   padding: 0px 10px;
+  //Bigger tablet
+  @media (min-width: 768px) {
+    /* CSS */
+    /* display: none; */
+    background-color: #adc906;
+    width: 40%;
+    top: 120px;
+    position: absolute;
+    padding: 40px;
+    text-align: left;
+    z-index: -1;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) {
+    /* CSS */
+    bottom: 0;
+    text-align: center;
+    padding: 70px 80px 0px 20px;
+    width: 35%;
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+    display: block;
+  }
 `;
 const Kopie = styled.p`
   width: 96%;
@@ -30,6 +104,34 @@ const Kopie = styled.p`
   font-weight: 400;
   text-align: left;
   padding: 0px 10px 20px 10px;
+  //Bigger tablet
+  @media (min-width: 768px) {
+    /* CSS */
+    width: 70%;
+    background-color: aliceblue;
+    text-align: right;
+    margin: 2rem 0rem auto auto;
+    padding: 6rem 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) {
+    /* CSS */
+    padding: 8rem 1rem 0rem 14rem;
+    line-height: 30px;
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const Welcome = () => {
@@ -37,8 +139,6 @@ const Welcome = () => {
   const SchonText = useRef();
 
   useEffect(() => {
-
-  
     gsap.from(WelcomeText.current, {
       x: 40,
       duration: 0.8,
@@ -61,7 +161,7 @@ const Welcome = () => {
   return (
     <WelcomeContainer>
       <Wilkommen ref={WelcomeText}>Wilkommen</Wilkommen>
-      <Schon ref={SchonText}>Schön, dass Sie uns gefunden haben</Schon>
+      <Schon ref={SchonText}>Schön, dass Sie uns gefunden haben !</Schon>
       <Kopie>
         Kopie & Druck offers you the entire processing and production of your
         order from pre-press to logistics in-house and thus guarantees short

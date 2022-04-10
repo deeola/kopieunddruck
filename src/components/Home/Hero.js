@@ -19,12 +19,18 @@ const HeroContainer = styled(Swiper)`
   height: 300px;
   background-color: aliceblue;
   margin: 10px auto;
+ //Bigger tablet
+ @media (min-width: 768px)  {
+    /* CSS */
+ height: 400px;
+  }
 
-  @media (min-width: 481px) and (max-width: 769px) {
+  //Laptop
 
-    height: 500px;
-    
-}
+  @media (min-width: 1025px)  {
+    /* CSS */
+    height: 80vh;
+  }
 `;
 
 const HeroImage = styled.img`

@@ -14,21 +14,26 @@ const OpenService = styled(FontAwesomeIcon)`
 
   margin-left: 30px;
   cursor: pointer;
+  
   //tablet view
-  @media (min-width: 481px) and (max-width: 769px) {
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px)  {
     /* CSS */
-color: #adc906;
-font-size: 12px;
+    color: black;
+    font-size: 12px;
+    margin-left: 10px;
+    
   }
 
   //Laptop
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1025px)  {
     /* CSS */
+    font-size: 16px;
+
   }
 
   //Desktop
@@ -45,20 +50,22 @@ const CloseService = styled(FontAwesomeIcon)`
   cursor: pointer;
   display: none;
   //tablet view
-  @media (min-width: 481px) and (max-width: 769px) {
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px)  {
     /* CSS */
-color: #adc906;
-font-size: 12px;
+    color: black;
+    font-size: 12px;
+    margin-left: 10px;
   }
 
   //Laptop
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1025px)  {
     /* CSS */
+    font-size: 16px;
   }
 
   //Desktop
@@ -74,19 +81,21 @@ const Servicess = styled.div`
   width: 100%;
   justify-content: space-between;
 
-  @media (min-width: 481px) and (max-width: 769px) {
+
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px)  {
     /* CSS */
-margin-bottom: 0px;
-position: relative;
+    margin-bottom: 0px;
+    position: relative;
+    
   }
 
   //Laptop
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1025px)  {
     /* CSS */
   }
 
@@ -101,27 +110,27 @@ const ServicesOffered = styled.ul`
   display: flex;
   flex-direction: column;
 
-    //tablet view
-    @media (min-width: 481px) and (max-width: 769px) {
+  //tablet view
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px)  {
     /* CSS */
-color: #e6e7dc;
-position: absolute;
-width: 300px;
-background-color: #adc906;
-top: 20px;
-left: 0px;
-
-
+    color: #e6e7dc;
+    position: absolute;
+    width: 300px;
+    background-color: #adc906;
+    top: 20px;
+    left: 0px;
   }
 
   //Laptop
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1025px)  {
     /* CSS */
+    top: 40px;
+    padding: 10px 0px;
   }
 
   //Desktop
@@ -139,21 +148,20 @@ const Offered = styled(Link)`
   padding-bottom: 10px;
   cursor: pointer;
   text-decoration: none;
-  color:  aliceblue;
+  color: aliceblue;
   //tablet view
-  @media (min-width: 481px) and (max-width: 769px) {
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px)  {
     /* CSS */
-
-
+   
   }
 
   //Laptop
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1025px)  {
     /* CSS */
   }
 
@@ -170,21 +178,26 @@ const NavLink = styled.li`
   font-size: 20px;
   font-weight: 500;
 
- //tablet view
- @media (min-width: 481px) and (max-width: 769px) {
+  //tablet view
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px)  {
     /* CSS */
-color: #adc906;
-font-size: 12px;
+
+    font-size: 12px;
+    color: black;
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-weight: 700;
   }
 
   //Laptop
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1025px)  {
     /* CSS */
+    font-size: 16px;
   }
 
   //Desktop
@@ -223,13 +236,9 @@ const Services = () => {
 
   return (
     <div>
-      <Servicess>
+      <Servicess onClick={() => menuIconClicked()}>
         <NavLink>Services</NavLink>
-        <OpenService
-          icon={faAngleDown}
-          style={removeHam()}
-          onClick={() => menuIconClicked()}
-        />
+        <OpenService icon={faAngleDown} style={removeHam()} />
         <CloseService
           icon={faAngleUp}
           style={flipIcons()}

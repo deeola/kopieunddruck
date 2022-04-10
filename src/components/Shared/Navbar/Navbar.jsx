@@ -31,14 +31,16 @@ const NavWrapper = styled.nav`
   }
 
   //Bigger tablet
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px)  {
     /* CSS */
+    background-color: unset;
   }
 
   //Laptop
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1025px)  {
     /* CSS */
+    padding: 30px 50px;
   }
 
   //Desktop
@@ -74,7 +76,7 @@ const NavList = styled.ul`
   visibility: hidden;
 
   //tablet view
-  @media (min-width: 481px) and (max-width: 769px) {
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
@@ -100,6 +102,7 @@ const NavList = styled.ul`
 
   @media (min-width: 1025px) {
     /* CSS */
+    width: 65%;
   }
 
   //Desktop
@@ -119,7 +122,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
 
   //tablet view
-  @media (min-width: 481px) and (max-width: 769px) {
+  @media (min-width: 481px)  {
   }
 
   //Bigger tablet
@@ -128,12 +131,14 @@ const NavLink = styled(Link)`
     color: black;
     font-size: 12px;
     margin-bottom: 0px;
+    font-weight: 700;
   }
 
   //Laptop
 
   @media (min-width: 1025px) {
     /* CSS */
+    font-size: 16px;
   }
 
   //Desktop
