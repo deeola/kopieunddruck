@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -15,6 +15,10 @@ import {
   faShirt,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import gsap from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger);
 
 library.add(fab, faBars, faXmark, faPhone, faAngleDown, faAngleUp);
 
@@ -73,33 +77,132 @@ const SubHeading = styled.h4`
 `;
 
 const Services = () => {
+
+
+  const ScanningText = useRef();
+  const  TextileText = useRef()
+
+  const DesignText = useRef();
+  const  BindingText = useRef()
+
+
+  const PhotocopyText = useRef();
+  const  PrintingText = useRef()
+
+  useEffect(() => {
+    gsap.from(ScanningText.current, {
+      x: 40,
+      duration: 0.7,
+      ease: "easeInOut",
+      delay: 0.2,
+      yoyo: true,
+      opacity: 0,
+      scrollTrigger:{
+        trigger: ScanningText.current
+      }
+    }
+    );
+
+
+    gsap.from(TextileText.current, {
+      x: -40,
+      duration: 0.7,
+      ease: "easeInOut",
+      delay: 0.2,
+      yoyo: true,
+      opacity: 0,
+      scrollTrigger:{
+        trigger: TextileText.current
+      }
+    }
+    );
+
+
+    gsap.from(BindingText.current, {
+      x: 40,
+      duration: 0.7,
+      ease: "easeInOut",
+      delay: 0.2,
+      yoyo: true,
+      opacity: 0,
+      scrollTrigger:{
+        trigger: BindingText.current
+      }
+    }
+    );
+
+
+    gsap.from(DesignText.current, {
+      x: -40,
+      duration: 0.7,
+      ease: "easeInOut",
+      delay: 0.2,
+      yoyo: true,
+      opacity: 0,
+      scrollTrigger:{
+        trigger: DesignText.current
+      }
+    }
+    );
+
+
+    gsap.from(PrintingText.current, {
+      x: 40,
+      duration: 0.7,
+      ease: "easeInOut",
+      delay: 0.2,
+      yoyo: true,
+      opacity: 0,
+      scrollTrigger:{
+        trigger: PrintingText.current
+      }
+    }
+    );
+
+
+    gsap.from(PhotocopyText.current, {
+      x: -40,
+      duration: 0.7,
+      ease: "easeInOut",
+      delay: 0.2,
+      yoyo: true,
+      opacity: 0,
+      scrollTrigger:{
+        trigger: PhotocopyText.current
+      }
+    }
+    );
+  
+  },[])
+
+  
   return (
     <ServicesContainer>
       <ServicesParagraph>Services</ServicesParagraph>
       <SubHeading>We also a wide range of servcies</SubHeading>
       <div>
         <ServiceGrid>
-          <EachService>
+          <EachService ref={PhotocopyText} >
             <IconService icon={faPaste} />
             <p> Photocopy</p>
           </EachService>
-          <EachService>
+          <EachService ref={PrintingText} >
             <IconService icon={faPrint} />
             <p> Printing</p>
           </EachService>
-          <EachService>
+          <EachService ref={DesignText} >
             <IconService icon={faFigma} />
             <p> Design</p>
           </EachService>
-          <EachService>
+          <EachService ref={BindingText}>
             <IconService icon={faBook} />
             <p> Binding</p>
           </EachService>
-          <EachService>
+          <EachService ref={TextileText}>
             <IconService icon={faShirt} />
             <p> Textile</p>
           </EachService>
-          <EachService>
+          <EachService ref={ScanningText}>
             <IconService icon={faFolder} />
             <p>Scanning</p>
           </EachService>
