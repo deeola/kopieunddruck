@@ -1,38 +1,104 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "./Footer";
+import styled from "styled-components";
+
+const Header = styled.h1`
+  margin: 0px auto 20px 0px;
+  background-color: #adc906;
+  color: #eaeef1;
+  padding: 10px 10px 10px 20px;
+`;
+
+const Subheading = styled.h4`
+  color: #adc906;
+  margin: 15px 0px;
+  font-weight: 800;
+  font-size: 19px;
+`;
+
+const Container = styled.div`
+  width: 85%;
+  margin: auto;
+`;
+
+const Text = styled.p`
+  line-height: 24px;
+  width: 100%;
+`;
+
+const TextSub = styled.p`
+  line-height: 24px;
+  width:  90%;
+  margin:0px auto;
+`;
+
+
+
+const SubheadingImpress = styled.p`
+width: 90%;
+margin: 10px auto 0px auto;
+color: #adc906;
+`
+
+const Hfour = styled.h4`
+margin: 10px 0px;
+`
+
+const Hfive = styled.h5`
+margin: 10px 0px;
+`
+
+const OrderedList = styled.ol`
+
+width: 75%;
+margin: auto;
+
+li{
+  margin: 10px 0px;
+}
+`
+
+const Hsix = styled.h6`
+
+margin: 10px 0px;
+font-size: 15px;
+color: #adc906;
+`
 
 const DataProtect = () => {
   return (
     <div>
       <Navbar />
       <div>
-        <h1>Datenschutzerklärung</h1>
-        <h5>für Website http://www.kopie-druck.com nach DSGVO</h5>
-        <p>(Erstellt im Mai 2018)</p>
-        <div>
-          <h4>I. Verantwortlichkeit</h4>
-          <p>
+        <Header>Datenschutzerklärung</Header>
+        <SubheadingImpress>für Website http://www.kopie-druck.com nach DSGVO</SubheadingImpress>
+       <TextSub>(Erstellt im Mai 2018)</TextSub>
+        
+       
+        <Container >
+          <Hfour>I. Verantwortlichkeit</Hfour>
+          <Text>
             Verantwortlich im Sinne der Datenschutz-Grundverordnung und anderer
             nationaler Datenschutzgesetze der Mitgliedsstaaten sowie sonstiger
             datenschutzrechtlicher Bestimmungen sind:
-          </p>
-          <p>Kopie & Druck GbR</p>
-          <p>Zerbster Straße 21</p>
-          <p>06844 Dessau-Roßlau</p>
-          <p>Vertreten durch:</p>
-          <p>Rainer Paegel, Christiane Lange, Christoph Jensch</p>
-          <p>
+          </Text>
+          <Text>Kopie & Druck GbR</Text>
+          <Text>Zerbster Straße 21</Text>
+          <Text>06844 Dessau-Roßlau</Text>
+          <Text>Vertreten durch:</Text>
+          <Text>Rainer Paegel, Christiane Lange, Christoph Jensch</Text>
+          <Text>
             <span>Telefon:</span> 0340 - 240 43 328
-          </p>
-          <p>
+          </Text>
+          <Text>
             <span>E-Mail:</span> kontaktkopie-druck.com
-          </p>
-        </div>
-        <div>
-          <h4>II. Allgemeines zur Datenverarbeitung</h4>
-          <h5>1. Umfang der Verarbeitung personenbezogener Daten</h5>
-          <p>
+          </Text>
+        </Container>
+        <Container>
+          <Hfour>II. Allgemeines zur Datenverarbeitung</Hfour>
+          <Hfive>1. Umfang der Verarbeitung personenbezogener Daten</Hfive>
+          <Text>
             Personenbezogene Daten der Nutzer werden grundsätzlich nur
             verarbeitet, soweit dies zur Bereitstellung einer funktionsfähigen
             Website sowie der Inhalte und Leistungen erforderlich ist. Die
@@ -41,11 +107,11 @@ const DataProtect = () => {
             Fällen, in denen eine vorherige Einholung einer Einwilligung aus
             tatsächlichen Gründen nicht möglich ist und die Verarbeitung der
             Daten durch gesetzliche Vorschriften gestattet ist.
-          </p>
-          <h5>
+          </Text>
+          <Hfive>
             2. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
-          </h5>
-          <p>
+          </Hfive>
+          <Text>
             Soweit für Verarbeitungsvorgänge personenbezogener Daten eine
             Einwilligung der betroffenen Person eingeholt wird, dient Art. 6
             Abs. 1 lit. a EU-Datenschutzgrundverordnung (DSGVO) als
@@ -65,9 +131,9 @@ const DataProtect = () => {
             Grundfreiheiten des Betroffenen das erstgenannte Interesse nicht, so
             dient Art. 6 Abs. 1 lit. f DSGVO als Rechtsgrundlage für die
             Verarbeitung.
-          </p>
-          <h5>3. Datenlöschung und Speicherdauer</h5>
-          <p>
+          </Text>
+          <Hfive>3. Datenlöschung und Speicherdauer</Hfive>
+          <Text>
             Die personenbezogenen Daten der betroffenen Person werden gelöscht
             oder gesperrt, sobald der Zweck der Speicherung entfällt. Eine
             Speicherung kann darüber hinaus erfolgen, wenn dies durch den
@@ -78,18 +144,18 @@ const DataProtect = () => {
             Normen vorgeschriebene Speicherfrist abläuft, es sei denn, dass eine
             Erforderlichkeit zur weiteren Speicherung der Daten für einen
             Vertragsabschluss oder eine Vertragserfüllung besteht.
-          </p>
-        </div>
-        <div>
-          <h4>III. Bereitstellung der Website und Erstellung von</h4>
+          </Text>
+        </Container>
+        <Container>
+          <Hfour>III. Bereitstellung der Website und Erstellung von</Hfour>
           <h3>Logfiles</h3>
-          <h5>1. Beschreibung und Umfang der Datenverarbeitung</h5>
-          <p>
+          <Hfive>1. Beschreibung und Umfang der Datenverarbeitung</Hfive>
+          <Text>
             Bei jedem Aufruf der Internetseite erfasst das System automatisiert
             Daten und Informationen vom Computersystem des aufrufenden Rechners.
             Folgende Daten werden hierbei erhoben:
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>Besuchte Website</li>
             <li>Menge der gesendeten Daten in Byte</li>
             <li>
@@ -106,20 +172,20 @@ const DataProtect = () => {
               Websites, die vom System des Nutzers über unsere Website
               aufgerufen werden
             </li>
-          </ol>
-          <p>
+          </OrderedList>
+          <Text>
             Die Daten werden in den Logfiles des Webhosters gespeichert. Nicht
             hiervon betroffen sind Daten, die die Zuordnung zu einem Nutzer
             ermöglichen. Eine Speicherung dieser Daten zusammen mit anderen
             personenbezogenen Daten des Nutzers findet nicht statt.
-          </p>
-          <h5>2. Rechtsgrundlage für die Datenverarbeitung</h5>
-          <p>
+          </Text>
+          <Hfive>2. Rechtsgrundlage für die Datenverarbeitung</Hfive>
+          <Text>
             Rechtsgrundlage für die vorübergehende Speicherung der Daten ist
             Art. 6 Abs. 1 lit. f DSGVO.
-          </p>
-          <h5>3. Zweck der Datenverarbeitung</h5>
-          <p>
+          </Text>
+          <Hfive>3. Zweck der Datenverarbeitung</Hfive>
+          <Text>
             Die vorübergehende Speicherung der IP-Adresse durch das System ist
             notwendig, um eine Auslieferung der Website an den Rechner des
             Nutzers zu ermöglichen. Hierfür muss die IP-Adresse des Nutzers für
@@ -131,24 +197,24 @@ const DataProtect = () => {
             Marketingzwecken findet in diesem Zusammenhang nicht statt. In
             diesen Zwecken liegt auch unser berechtigtes Interesse an der
             Datenverarbeitung nach Art. 6 Abs. 1 lit. f DSGVO.
-          </p>
-          <h5>4. Dauer der Speicherung</h5>
-          <p>
+          </Text>
+          <Hfive>4. Dauer der Speicherung</Hfive>
+          <Text>
             Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes
             ihrer Erhebung nicht mehr erforderlich sind.
-          </p>
-          <h5>5. Widerspruchs- und Beseitigungsmöglichkeit</h5>
-          <p>
+          </Text>
+          <Hfive>5. Widerspruchs- und Beseitigungsmöglichkeit</Hfive>
+          <Text>
             Die Erfassung der Daten zur Bereitstellung der Website und die
             Speicherung der Daten in Logfiles durch den Webhoster ist für den
             Betrieb einer Internetseite zwingend erforderlich. Es besteht
             folglich seitens des Nutzers keine Widerspruchsmöglichkeit.
-          </p>
-        </div>
-        <div>
-          <h4>IV. Verwendung von Cookies</h4>
-          <h5>1. Beschreibung und Umfang der Datenverarbeitung</h5>
-          <p>
+          </Text>
+        </Container>
+        <Container>
+          <Hfour>IV. Verwendung von Cookies</Hfour>
+          <Hfive>1. Beschreibung und Umfang der Datenverarbeitung</Hfive>
+          <Text>
             Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um
             Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem
             Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine
@@ -160,14 +226,14 @@ const DataProtect = () => {
             Internetseite erfordern es, dass der aufrufende Browser auch nach
             einem Seitenwechsel identifiziert werden kann. Sie können den
             Browser veranlassen, die Annahme dieser Cookies zu verweigern.
-          </p>
-          <h5>2. Rechtsgrundlage für die Datenverarbeitung</h5>
-          <p>
+          </Text>
+          <Hfive>2. Rechtsgrundlage für die Datenverarbeitung</Hfive>
+          <Text>
             Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten
             unter Verwendung von Cookies ist Art. 6 Abs. 1 lit. f DSGVO.
-          </p>
-          <h5>3. Zweck der Datenverarbeitung</h5>
-          <p>
+          </Text>
+          <Hfive>3. Zweck der Datenverarbeitung</Hfive>
+          <Text>
             Der Zweck der Verwendung technisch notwendiger Cookies ist, die
             Nutzung von Websites für die Nutzer zu vereinfachen. Einige
             Funktionen unserer Internetseite können ohne den Einsatz von Cookies
@@ -177,11 +243,11 @@ const DataProtect = () => {
             Erstellung von Nutzerprofilen verwendet. In diesen Zwecken liegt
             auch unser berechtigtes Interesse in der Verarbeitung der
             personenbezogenen Daten nach Art. 6 Abs. 1 lit. f DSGVO.
-          </p>
-          <h5>
+          </Text>
+          <Hfive>
             4. Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit
-          </h5>
-          <p>
+          </Hfive>
+          <Text>
             Cookies werden auf dem Rechner des Nutzers gespeichert und von
             diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch
             die volle Kontrolle über die Verwendung von Cookies. Durch eine
@@ -191,35 +257,35 @@ const DataProtect = () => {
             auch automatisiert erfolgen. Werden Cookies für unsere Website
             deaktiviert, können möglicherweise nicht mehr alle Funktionen der
             Website vollumfänglich genutzt werden.
-          </p>
-        </div>
-        <div>
-          <h4>V. Kontaktformular und E-Mail-Kontakt</h4>
-          <h5>1. Beschreibung und Umfang der Datenverarbeitung</h5>
-          <p>
+          </Text>
+        </Container>
+        <Container>
+          <Hfour>V. Kontaktformular und E-Mail-Kontakt</Hfour>
+          <Hfive>1. Beschreibung und Umfang der Datenverarbeitung</Hfive>
+          <Text>
             Auf unserer Internetseite ist ein Kontaktformular vorhanden, welches
             für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein
             Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske
             eingegeben Daten an uns übermittelt und gespeichert. Diese Daten
             sind:
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>Name</li>
             <li>E-Mail-Adresse</li>
             <li>PLZ</li>
             <li>Telefonnummer</li>
             <li>Betreff</li>
             <li>Nachricht</li>
-          </ol>
-          <p>
+          </OrderedList>
+          <Text>
             Im Zeitpunkt der Absendung der Nachricht werden zudem folgende Daten
             gespeichert
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>Die IP-Adresse des Nutzers</li>
             <li>Datum und Uhrzeit der Sendung der Kontakt-E-Mail</li>
-          </ol>
-          <p>
+          </OrderedList>
+          <Text>
             Für die Verarbeitung der Daten wird im Rahmen des Absendevorgangs
             Ihre Einwilligung eingeholt und auf diese Datenschutzerklärung
             verwiesen. Alternativ ist eine Kontaktaufnahme über die
@@ -228,9 +294,9 @@ const DataProtect = () => {
             gespeichert. Es erfolgt in diesem Zusammenhang keine Weitergabe der
             Daten an Dritte. Die Daten werden ausschließlich für die
             Verarbeitung der Konversation verwendet.
-          </p>
-          <h5>2. Rechtsgrundlage für die Datenverarbeitung</h5>
-          <p>
+          </Text>
+          <Hfive>2. Rechtsgrundlage für die Datenverarbeitung</Hfive>
+          <Text>
             Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen
             einer Einwilligung des Nutzers Art. 6 Abs. 1 lit. a DSGVO.
             Rechtsgrundlage für die Verarbeitung der Daten, die im Zuge einer
@@ -238,9 +304,9 @@ const DataProtect = () => {
             f DSGVO. Zielt der E-Mail-Kontakt auf den Abschluss eines Vertrages
             ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6
             Abs. 1 lit. b DSGVO.
-          </p>
-          <h5>3. Zweck der Datenverarbeitung</h5>
-          <p>
+          </Text>
+          <Hfive>3. Zweck der Datenverarbeitung</Hfive>
+          <Text>
             Die Verarbeitung der personenbezogenen Daten aus der Eingabemaske
             dient uns allein zur Bearbeitung der Kontaktaufnahme. Im Falle einer
             Kontaktaufnahme per E-Mail liegt hieran auch das erforderliche
@@ -249,9 +315,9 @@ const DataProtect = () => {
             dienen dazu, einen Missbrauch des Kontaktformulars zu verhindern und
             die Sicherheit unserer informationstechnischen Systeme
             sicherzustellen.
-          </p>
-          <h5>4. Dauer der Speicherung</h5>
-          <p>
+          </Text>
+          <Hfive>4. Dauer der Speicherung</Hfive>
+          <Text>
             Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes
             ihrer Erhebung nicht mehr erforderlich sind. Für die
             personenbezogenen Daten aus der Eingabemaske des Kontaktformulars
@@ -262,9 +328,9 @@ const DataProtect = () => {
             geklärt ist. Die während des Absendevorgangs zusätzlich erhobenen
             personenbezogenen Daten werden spätestens nach einer Frist von
             sieben Tagen gelöscht.
-          </p>
-          <h5>Widerspruchs- und Beseitigungsmöglichkeit</h5>
-          <p>
+          </Text>
+          <Hfive>Widerspruchs- und Beseitigungsmöglichkeit</Hfive>
+          <Text>
             Der Nutzer hat jederzeit die Möglichkeit, seine Einwilligung zur
             Verarbeitung der personenbezogenen Daten zu widerrufen. Nimmt der
             Nutzer per E-Mail Kontakt mit uns auf, so kann er der Speicherung
@@ -274,45 +340,45 @@ const DataProtect = () => {
             uns dies bitte mit Hilfe des Kontaktformulars auf der Internetseite
             mit. Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme
             gespeichert wurden, werden in diesem Fall gelöscht.
-          </p>
-        </div>
-        <div>
-          <h4>VI. Erweiterungen von Drittanbietern</h4>
-          <p>
+          </Text>
+        </Container>
+        <Container>
+          <Hfour>VI. Erweiterungen von Drittanbietern</Hfour>
+          <Text>
             Wir nutzen keine Erweiterungen von Drittanbietern, welche ein
             Tracking ermöglichen. Lediglich für die Darstellung der Karte werden
             die Daten der Open Source Plattform „openstreetmap.org“ geladen.
-          </p>
-          <h5>1. Umfang der Verarbeitung personenbezogener Daten</h5>
-          <p>
+          </Text>
+          <Hfive>1. Umfang der Verarbeitung personenbezogener Daten</Hfive>
+          <Text>
             Bei der Nutzung der Seiten werden keine personenbezogenen Daten
             durch Erweiterungen von Drittanbietern erhoben.
-          </p>
-          <h5>
+          </Text>
+          <Hfive>
             2. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
-          </h5>
-          <p>--</p>
-          <h5>3. Zweck der Datenverarbeitung</h5>
-          <p>--</p>
-          <h5>4. Dauer der Speicherung</h5>
-          <p>--</p>
-          <h5>5. Widerspruchs- und Beseitigungsmöglichkeit</h5>
-          <p>
+          </Hfive>
+          <Text>--</Text>
+          <Hfive>3. Zweck der Datenverarbeitung</Hfive>
+          <Text>--</Text>
+          <Hfive>4. Dauer der Speicherung</Hfive>
+          <Text>--</Text>
+          <Hfive>5. Widerspruchs- und Beseitigungsmöglichkeit</Hfive>
+          <Text>
             Die Darstellung von Inhalten von Drittanbietern kann durch Ihren
             Browser und/oder entsprechende PlugIns (z.B. Request Policy)
             verhindert werden.
-          </p>
-        </div>
-        <div>
-          <h4>VII. Rechte der betroffenen Person</h4>
-          <p>
+          </Text>
+        </Container>
+        <Container>
+          <Hfour>VII. Rechte der betroffenen Person</Hfour>
+          <Text>
             Sie können von dem Verantwortlichen eine Bestätigung darüber
             verlangen, ob personenbezogene Daten, die Sie betreffen, von uns
             verarbeitet werden. Liegt eine solche Verarbeitung vor, können Sie
             von dem Verantwortlichen über folgende Informationen Auskunft
             verlangen:
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>
               die Zwecke, zu denen die personenbezogenen Daten verarbeitet
               werden;
@@ -345,29 +411,29 @@ const DataProtect = () => {
               die personenbezogenen Daten nicht bei der betroffenen Person
               erhoben werden
             </li>
-          </ol>
-          <p>
+          </OrderedList>
+          <Text>
             Ihnen steht das Recht zu, Auskunft darüber zu verlangen, ob die Sie
             betreffenden personenbezogenen Daten in ein Drittland oder an eine
             internationale Organisation übermittelt werden. In diesem
             Zusammenhang können Sie verlangen, über die geeigneten Garantien
             gem. Art. 46 DSGVO im Zusammenhang mit der Übermittlung unterrichtet
             zu werden.
-          </p>
-          <h5>2. Recht auf Berichtigung</h5>
-          <p>
+          </Text>
+          <Hfive>2. Recht auf Berichtigung</Hfive>
+          <Text>
             Sie haben ein Recht auf Berichtigung und/oder Vervollständigung
             gegenüber dem Verantwortlichen, sofern die verarbeiteten
             personenbezogenen Daten, die Sie betreffen, unrichtig oder
             unvollständig sind. Der Verantwortliche hat die Berichtigung
             unverzüglich vorzunehmen.
-          </p>
-          <h5>3. Recht auf Einschränkung der Verarbeitung</h5>
-          <p>
+          </Text>
+          <Hfive>3. Recht auf Einschränkung der Verarbeitung</Hfive>
+          <Text>
             Unter den folgenden Voraussetzungen können Sie die Einschränkung der
             Verarbeitung der Sie betreffenden personenbezogenen Daten verlangen:
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>
               wenn Sie die Richtigkeit der Sie betreffenden personenbezogenen
               für eine Dauer bestreiten, die es dem Verantwortlichen ermöglicht,
@@ -399,16 +465,16 @@ const DataProtect = () => {
               Voraussetzungen eingeschränkt, werden Sie von dem Verantwortlichen
               unterrichtet bevor die Einschränkung aufgehoben wird.
             </li>
-          </ol>
-          <h5>4. Recht auf Löschung</h5>
-          <h6>(1) Löschungspflicht</h6>
-          <p>
+          </OrderedList>
+          <Hfive>4. Recht auf Löschung</Hfive>
+          <Hsix>(1) Löschungspflicht</Hsix>
+          <Text>
             Sie können von dem Verantwortlichen verlangen, dass die Sie
             betreffenden personenbezogenen Daten unverzüglich gelöscht werden,
             und der Verantwortliche ist verpflichtet, diese Daten unverzüglich
             zu löschen, sofern einer der folgenden Gründe zutrifft:
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>
               Die Sie betreffenden personenbezogenen Daten sind für die Zwecke,
               für die sie erhoben oder auf sonstige Weise verarbeitet wurden,
@@ -441,13 +507,13 @@ const DataProtect = () => {
               angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs.
               1 DSGVO erhoben.
             </li>
-          </ol>
-          <h6>(2) Information an Dritte</h6>
-          <p>
+          </OrderedList>
+          <Hsix>(2) Information an Dritte</Hsix>
+          <Text>
             Das Recht auf Löschung besteht nicht, soweit die Verarbeitung
             erforderlich ist
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>
               zur Ausübung des Rechts auf freie Meinungsäußerung und
               Information;
@@ -469,7 +535,7 @@ const DataProtect = () => {
               für im öffentlichen Interesse liegende Archivzwecke,
               wissenschaftliche oder historische Forschungszwecke oder für
               statistische Zwecke gem. Art. 89 Abs. 1 DSGVO, soweit das unter
-              Abschnitt a) genannte Recht voraussichtlich die Verwirklichung der
+              Abschnitt a genannte Recht voraussichtlich die Verwirklichung der
               Ziele dieser Verarbeitung unmöglich macht oder ernsthaft
               beeinträchtigt, oder
             </li>
@@ -477,9 +543,9 @@ const DataProtect = () => {
               zur Geltendmachung, Ausübung oder Verteidigung von
               Rechtsansprüchen.
             </li>
-          </ol>
-          <h5>5. Recht auf Unterrichtung</h5>
-          <p>
+          </OrderedList>
+          <Hfive>5. Recht auf Unterrichtung</Hfive>
+          <Text>
             Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung
             der Verarbeitung gegenüber dem Verantwortlichen geltend gemacht, ist
             dieser verpflichtet, allen Empfängern, denen die Sie betreffenden
@@ -489,9 +555,9 @@ const DataProtect = () => {
             unverhältnismäßigen Aufwand verbunden. Ihnen steht gegenüber dem
             Verantwortlichen das Recht zu, über diese Empfänger unterrichtet zu
             werden.
-          </p>
-          <h5>6. Recht auf Datenübertragbarkeit</h5>
-          <p>
+          </Text>
+          <Hfive>6. Recht auf Datenübertragbarkeit</Hfive>
+          <Text>
             Sie haben das Recht, die Sie betreffenden personenbezogenen Daten,
             die Sie dem Verantwortlichen bereitgestellt haben, in einem
             strukturierten, gängigen und maschinenlesbaren Format zu erhalten.
@@ -499,8 +565,8 @@ const DataProtect = () => {
             Verantwortlichen ohne Behinderung durch den Verantwortlichen, dem
             die personenbezogenen Daten bereitgestellt wurden, zu übermitteln,
             sofern
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>
               die Verarbeitung auf einer Einwilligung gem. Art. 6 Abs. 1 lit. a
               DSGVO oder Art. 9 Abs. 2 lit. a DSGVO oder auf einem Vertrag gem.
@@ -519,9 +585,9 @@ const DataProtect = () => {
               Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen
               übertragen wurde.
             </li>
-          </ol>
-          <h5>7. Widerspruchsrecht</h5>
-          <p>
+          </OrderedList>
+          <Hfive>7. Widerspruchsrecht</Hfive>
+          <Text>
             Sie haben das Recht, aus Gründen, die sich aus ihrer besonderen
             Situation ergeben, jederzeit gegen die Verarbeitung der Sie
             betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1
@@ -545,29 +611,29 @@ const DataProtect = () => {
             Richtlinie 2002/58/EG – Ihr Widerspruchsrecht mittels
             automatisierter Verfahren auszuüben, bei denen technische
             Spezifikationen verwendet werden.
-          </p>
-          <h5>
+          </Text>
+          <Hfive>
             8. Recht auf Widerruf der datenschutzrechtlichen
             Einwilligungserklärung
-          </h5>
-          <p>
+          </Hfive>
+          <Text>
             Sie haben das Recht, Ihre datenschutzrechtliche
             Einwilligungserklärung jederzeit zu widerrufen. Durch den Widerruf
             der Einwilligung wird die Rechtmäßigkeit der aufgrund der
             Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
-          </p>
-          <h5>
+          </Text>
+          <Hfive>
             9. Automatisierte Entscheidung im Einzelfall einschließlich
             Profiling
-          </h5>
-          <p>
+          </Hfive>
+          <Text>
             Sie haben das Recht, nicht einer ausschließlich auf einer
             automatisierten Verarbeitung – einschließlich Profiling – beruhenden
             Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche
             Wirkung entfaltet oder Sie in ähnlicher Weise erheblich
             beeinträchtigt. Dies gilt nicht, wenn die Entscheidung
-          </p>
-          <ol>
+          </Text>
+          <OrderedList>
             <li>
               für den Abschluss oder die Erfüllung eines Vertrags zwischen Ihnen
               und dem Verantwortlichen erforderlich ist,
@@ -580,8 +646,8 @@ const DataProtect = () => {
               enthalten oder
             </li>
             <li>mit Ihrer ausdrücklichen Einwilligung erfolgt.</li>
-          </ol>
-          <p>
+          </OrderedList>
+          <Text>
             Allerdings dürfen diese Entscheidungen nicht auf besonderen
             Kategorien personenbezogener Daten nach Art. 9 Abs. 1 DSGVO beruhen,
             sofern nicht Art. 9 Abs. 2 lit. a oder g DSGVO gilt und angemessene
@@ -592,9 +658,9 @@ const DataProtect = () => {
             Interessen zu wahren, wozu mindestens das Recht auf Erwirkung des
             Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung
             des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.
-          </p>
-          <h5>10. Recht auf Beschwerde bei einer Aufsichtsbehörde</h5>
-          <p>
+          </Text>
+          <Hfive>10. Recht auf Beschwerde bei einer Aufsichtsbehörde</Hfive>
+          <Text>
             Unbeschadet eines anderweitigen verwaltungsrechtlichen oder
             gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei
             einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres
@@ -605,8 +671,8 @@ const DataProtect = () => {
             unterrichtet den Beschwerdeführer über den Stand und die Ergebnisse
             der Beschwerde einschließlich der Möglichkeit eines gerichtlichen
             Rechtsbehelfs nach Art. 78 DSGVO.
-          </p>
-        </div>
+          </Text>
+        </Container>
       </div>
       <Footer />
     </div>
