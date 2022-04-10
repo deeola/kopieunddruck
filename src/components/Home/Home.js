@@ -8,6 +8,8 @@ import Footer from "../Shared/Footer/Footer";
 import Map from './Map';
 
 const Home = () => {
+
+  
   return (
     <div>
       <Navbar />

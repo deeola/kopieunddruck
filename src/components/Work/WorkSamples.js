@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 import styled from "styled-components";
@@ -8,6 +8,7 @@ import design from "../../assest/design.jpg";
 import poster from "../../assest/poster.jpg";
 import druck from "../../assest/druck.jpg";
 import scan from "../../assest/scan.jpg";
+import gsap from "gsap";
 
 
 
@@ -25,6 +26,7 @@ const PreviousWorkGrid = styled.div`
 const ImageContainerOne = styled.div`
 grid-column: 1/2;
 grid-row: 1;
+
 `;
 const ImageContainerTwo = styled.div`
 grid-column: 2/3;
@@ -56,6 +58,76 @@ const Header = styled.h1`
 `;
 
 const WorkSamples = () => {
+
+  const FirstImage = useRef();
+  const FirstImageContainer = useRef()
+
+  const SecondImage = useRef();
+  const SecondImageContainer = useRef()
+
+  const ThirdImage = useRef();
+  const ThirdImageContainer = useRef()
+
+
+
+  
+  useEffect(() => {
+   
+   
+   
+    gsap.from(FirstImageContainer.current, {
+     
+      duration: 0.8,
+      ease: 'Power3.easeOut',
+      x: -20
+      
+    });
+
+    gsap.from(FirstImage.current, {
+
+      duration: 1,
+      ease: 'Power3.easeOut',
+      scale: 0.9,
+      delay: .2
+    });
+
+    gsap.from(SecondImageContainer.current, {
+     
+      duration: 0.8,
+      ease: 'Power3.easeOut',
+      x: 20
+      
+    });
+
+    gsap.from(SecondImage.current, {
+
+      duration: 1,
+      ease: 'Power3.easeOut',
+      scale: 0.9,
+      delay: .2
+    });
+
+    gsap.from(ThirdImageContainer.current, {
+     
+      duration: 0.8,
+      ease: 'Power3.easeOut',
+      scale: 1
+      
+    });
+
+    gsap.from(ThirdImage.current, {
+      duration: 1.2,
+      ease: 'Power3.easeOut',
+      scale: 0.9,
+      
+    });
+
+
+
+    
+  
+
+  },[])
   return (
     <div>
       <Navbar />
@@ -63,14 +135,14 @@ const WorkSamples = () => {
              Work Samples
           </Header>
       <PreviousWorkGrid>
-        <ImageContainerOne>
-          <Image src={druck} alt="cad" />
+        <ImageContainerOne ref={FirstImageContainer}>
+          <Image src={druck} alt="cad" ref={FirstImage} />
         </ImageContainerOne>
-        <ImageContainerTwo>
-          <Image src={laminate} alt="lamiate" />
+        <ImageContainerTwo ref={SecondImageContainer}>
+          <Image ref={SecondImage} src={laminate} alt="lamiate" />
         </ImageContainerTwo>
-        <ImageContainerThree>
-          <Image src={binding} alt="binding" />
+        <ImageContainerThree ref={ThirdImageContainer}>
+          <Image ref={ThirdImage} src={binding} alt="binding" />
         </ImageContainerThree>
         <ImageContainerFour>
           <Image src={poster} alt="binding" />

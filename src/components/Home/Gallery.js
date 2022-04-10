@@ -42,6 +42,7 @@ const Gallery = () => {
     <div>
       <GalleryParagraph>GALLERY</GalleryParagraph>
       <ImageContainer>
+      
         <HeroImage src={HeroTwo} alt="heroTwo" />
         <HeroImage src={HeroOne} alt="heroOne" />
         <HeroImage src={HeroTwo} alt="heroTwo" />
