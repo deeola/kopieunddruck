@@ -45,7 +45,7 @@ const Facebook = styled(FontAwesomeIcon)``;
 const Logo = styled.div``;
 
 const FacebookLink = styled.a`
-  color: blue;
+  color: black;
   text-decoration: none;
   font-size: 30px;
 `;

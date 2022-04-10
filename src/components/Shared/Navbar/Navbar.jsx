@@ -25,6 +25,27 @@ const NavWrapper = styled.nav`
   align-items: center;
   padding: 20px 20px;
   background-color: #eaeef1;
+
+  //tablet view
+  @media (min-width: 481px) and (max-width: 769px) {
+  }
+
+  //Bigger tablet
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 //Logo
@@ -49,37 +70,42 @@ const NavList = styled.ul`
   flex-direction: column;
   padding: 20px 20px;
   justify-content: space-between;
-
   z-index: 2;
   visibility: hidden;
-  transition: all 0.375s ease-in;
-  animation-name: Nav;
-  animation-duration: 500ms;
-
-  @keyframes Nav {
-    from {
-      transform: scale(0);
-      transform: translateX(-700);
-    }
-    to {
-      transform: scale(1);
-      transform: translateX(0);
-    }
-  }
 
   //tablet view
-  @media screen and (min-width: 415px) {
-    display: flex !important;
-    align-items: center;
-    width: 20rem;
-    position: unset;
-    flex-direction: row;
-    top: unset;
-    background-color: unset;
-    z-index: unset;
-    height: unset;
+  @media (min-width: 481px) and (max-width: 769px) {
   }
-  @media screen and (min-width: 843px) {
+
+  //Bigger tablet
+  @media (min-width: 768px) {
+    display: flex !important;
+    position: relative;
+    visibility: visible;
+    margin-left: 0px;
+    flex-direction: row;
+    width: 60%;
+    top: unset;
+    left: unset;
+    padding: 20px;
+    background-color: unset;
+
+    text-align: center !important;
+    align-items: center !important;
+
+    padding: unset;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
   }
 `;
 
@@ -89,20 +115,59 @@ const NavLink = styled(Link)`
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
+
   text-decoration: none;
 
+  //tablet view
+  @media (min-width: 481px) and (max-width: 769px) {
+  }
 
+  //Bigger tablet
+  @media (min-width: 768px) {
+    /* CSS */
+    color: black;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const CallIcon = styled(FontAwesomeIcon)`
   color: #adc906;
   font-size: 22px;
   cursor: pointer;
+
+  //tablet view
+  @media (min-width: 481px) and (max-width: 769px) {
+  }
+
+  //Bigger tablet
+  @media (min-width: 768px) {
+    /* CSS */
+    display: none;
+  }
 `;
 
 const NavIcons = styled.div`
   display: flex;
   align-items: center;
+
+  //Bigger tablet
+  @media (min-width: 768px) {
+    /* CSS */
+    display: none;
+  }
 `;
 
 const Open = styled(FontAwesomeIcon)`
@@ -145,14 +210,13 @@ const Navbar = () => {
 
   const menuIconClicked = () => {
     setMenuOpend(!menuOpened);
-    animateNavbar()
+    animateNavbar();
     return menuClosed ? {} : { display: "block" };
   };
 
   const closeIconClicked = () => {
     setMenuOpend(false);
   };
-
 
   // Animation
 
@@ -162,7 +226,7 @@ const Navbar = () => {
   const ContactText = useRef();
   const DataText = useRef(null);
 
-  const animateNavbar =() => {
+  const animateNavbar = () => {
     gsap.from(ServicesText.current, {
       x: 40,
       duration: 0.8,
@@ -204,9 +268,7 @@ const Navbar = () => {
       yoyo: true,
       opacity: 0,
     });
-  }
-
-
+  };
 
   return (
     <NavWrapper>
@@ -216,10 +278,18 @@ const Navbar = () => {
 
       <NavList style={slideMenu()}>
         <Services ref={ServicesText} />
-        <NavLink ref={WorkText} to="/worksamples">Work Samples</NavLink>
-        <NavLink ref={AboutText} to="/about-us">About Us</NavLink>
-        <NavLink ref={ContactText} to="/kontact">Contact Us</NavLink>
-        <NavLink ref={DataText} to="/datenaufbereitung">Datenaufbereitung</NavLink>
+        <NavLink ref={WorkText} to="/worksamples">
+          Work Samples
+        </NavLink>
+        <NavLink ref={AboutText} to="/about-us">
+          About Us
+        </NavLink>
+        <NavLink ref={ContactText} to="/kontact">
+          Contact Us
+        </NavLink>
+        <NavLink ref={DataText} to="/datenaufbereitung">
+          Datenaufbereitung
+        </NavLink>
       </NavList>
       <CallIcon icon={faPhone} />
 

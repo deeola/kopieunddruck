@@ -14,6 +14,28 @@ const OpenService = styled(FontAwesomeIcon)`
 
   margin-left: 30px;
   cursor: pointer;
+  //tablet view
+  @media (min-width: 481px) and (max-width: 769px) {
+  }
+
+  //Bigger tablet
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+color: #adc906;
+font-size: 12px;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const CloseService = styled(FontAwesomeIcon)`
@@ -22,6 +44,28 @@ const CloseService = styled(FontAwesomeIcon)`
   margin-left: 30px;
   cursor: pointer;
   display: none;
+  //tablet view
+  @media (min-width: 481px) and (max-width: 769px) {
+  }
+
+  //Bigger tablet
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+color: #adc906;
+font-size: 12px;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const Servicess = styled.div`
@@ -29,11 +73,62 @@ const Servicess = styled.div`
   margin-bottom: 20px;
   width: 100%;
   justify-content: space-between;
+
+  @media (min-width: 481px) and (max-width: 769px) {
+  }
+
+  //Bigger tablet
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+margin-bottom: 0px;
+position: relative;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const ServicesOffered = styled.ul`
   display: flex;
   flex-direction: column;
+
+    //tablet view
+    @media (min-width: 481px) and (max-width: 769px) {
+  }
+
+  //Bigger tablet
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+color: #e6e7dc;
+position: absolute;
+width: 300px;
+background-color: #adc906;
+top: 20px;
+left: 0px;
+
+
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const Offered = styled(Link)`
@@ -45,6 +140,28 @@ const Offered = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color:  aliceblue;
+  //tablet view
+  @media (min-width: 481px) and (max-width: 769px) {
+  }
+
+  //Bigger tablet
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+
+
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
+  }
 `;
 
 const NavLink = styled.li`
@@ -53,17 +170,27 @@ const NavLink = styled.li`
   font-size: 20px;
   font-weight: 500;
 
-  transition: all 0.375s ease-in;
-  animation-name: Nav;
-  animation-duration: 900ms;
+ //tablet view
+ @media (min-width: 481px) and (max-width: 769px) {
+  }
 
-  @keyframes Nav {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  //Bigger tablet
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+color: #adc906;
+font-size: 12px;
+  }
+
+  //Laptop
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+  }
+
+  //Desktop
+
+  @media (min-width: 1281px) {
+    /* CSS */
   }
 `;
 
