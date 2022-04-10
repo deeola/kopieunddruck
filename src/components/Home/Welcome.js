@@ -20,12 +20,14 @@ const WelcomeContainer = styled.div`
 
   @media (min-width: 1025px) {
     /* CSS */
+    height: 400px;
   }
 
   //Desktop
 
   @media (min-width: 1281px) {
     /* CSS */
+    height: 500px;
   }
 `;
 
@@ -84,15 +86,16 @@ const Schon = styled.h4`
     /* CSS */
     bottom: 0;
     text-align: center;
-    padding: 70px 80px 0px 20px;
-    width: 35%;
+    padding: 100px 80px 0px 20px;
+    width: 45%;
+    
   }
 
   //Desktop
 
   @media (min-width: 1281px) {
     /* CSS */
-    display: block;
+    width: 55%;
   }
 `;
 const Kopie = styled.p`
@@ -117,20 +120,23 @@ const Kopie = styled.p`
     right: 0;
     height: 100%;
     z-index: -1;
+   
   }
 
   //Laptop
 
   @media (min-width: 1025px) {
     /* CSS */
-    padding: 8rem 1rem 0rem 14rem;
+    padding: 9rem 1rem 0rem 14rem;
     line-height: 30px;
+    width: 60%;
   }
 
   //Desktop
 
   @media (min-width: 1281px) {
     /* CSS */
+    width: 50%;
   }
 `;
 

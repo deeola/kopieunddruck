@@ -109,6 +109,7 @@ const NavList = styled.ul`
 
   @media (min-width: 1281px) {
     /* CSS */
+    width: 45%;
   }
 `;
 
