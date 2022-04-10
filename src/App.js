@@ -22,7 +22,7 @@ import Students from "./components/Services/Students";
 
 function App() {
   return (
-    <Router >
+    <Router basename={window.location.pathname || ""}>
       <div className="App">
         <GlobalStyle />
         <Routes>
@@ -54,6 +54,3 @@ function App() {
 
 
 export default App;
-
-
-// basename={window.location.pathname || ""}
